@@ -118,7 +118,7 @@ struct METER_DESC {
 // select this meter
 // SML_NO_OP ignores hardcoded interface
 #define METER SML_NO_OP
-//#define METER EHZ161_1
+#define METER Q3B
 
 #if METER==SML_NO_OP
 #undef METERS_USED
@@ -243,9 +243,9 @@ struct METER_DESC const meter_desc[METERS_USED]={
   [0]={3,'s',0,SML_BAUDRATE,"SML",-1,1,0}};
 const uint8_t meter[]=
 //0x77,0x07,0x01,0x00,0x01,0x08,0x01,0xff
-"1,77070100010800ff@1000," D_TPWRIN ",kWh," DJ_TPWRIN ",4|"
+"1,77070100010800ff@1000," D_TPWRIN ",kWh," DJ_TPWRIN ",1|"
 //0x77,0x07,0x01,0x00,0x02,0x08,0x01,0xff
-"1,77070100020801ff@1000," D_TPWROUT ",kWh," DJ_TPWROUT ",4|"
+//"1,77070100020801ff@1000," D_TPWROUT ",kWh," DJ_TPWROUT ",4|"
 //0x77,0x07,0x01,0x00,0x01,0x07,0x00,0xff
 "1,77070100010700ff@1," D_TPWRCURR ",W," DJ_TPWRCURR ",0";
 #endif
