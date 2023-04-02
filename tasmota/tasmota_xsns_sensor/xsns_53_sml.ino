@@ -117,7 +117,7 @@ struct METER_DESC {
 
 // select this meter
 // SML_NO_OP ignores hardcoded interface
-#define METER SML_NO_OP
+//#define METER SML_NO_OP
 #define METER Q3B
 
 #if METER==SML_NO_OP

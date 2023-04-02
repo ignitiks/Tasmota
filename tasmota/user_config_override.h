@@ -96,8 +96,8 @@ Examples :
 #define USE_SML_M
 #endif
 
-#ifdef USE_RULES
-#undef USE_RULES
+#ifndef USE_RULES
+#define USE_RULES
 #endif
 
 #endif  // _USER_CONFIG_OVERRIDE_H_
